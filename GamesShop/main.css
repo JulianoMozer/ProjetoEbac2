@@ -4,17 +4,35 @@
     box-sizing: 0;    
 }
 
+header,
+section h2 {
+        font-family: "Bungee", sans-serif;
+    font-weight: 400;
+font-style: normal;
+}
+
+
+body {
+    família de fontes: "Roboto Condensed", sans-serif;
+}
+
+header h1, 
+section h2 {
+    font-weight: normal;
+}
+
 header {
-    padding: 16px;
+    padding: 16px 0;
     background-color: #182c61;
     color: #ecf0f1;
 }
+
 header nav li {
     display: inline;
     margin-left: 16px;
-    font-size: 24px;
-    color: #ecf0f1
+    font-size: 18px;
 }
+
 header nav li a{
     color: #ecf0f1
     text-decoration: none;
@@ -26,8 +44,43 @@ header nav li a{
     margin: 0 auto;
 }
 
-header .container {
+header .container,
+section .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
+.brands-list img {
+    height: 24px;
+    margin-right: 8px;
+}
+
+.brands-list li {
+    display: inline;
+}
+
+section .container {
+    align-items: flex-start;
+}
+
+section {
+    padding: 24px o;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+section {
+    color: #182c61
+}
+
+section p {
+    margin-bottom: 8px;
+}
+
+.store-front {
+    margin-right: 32px;
+}
+
