@@ -15,6 +15,7 @@ form button {
 
 body, input, textarea {
     font-family: "Roboto Condensed", sans-serif;
+    background-color: rgb(250, 208, 169);
 }
 
 header {
@@ -27,11 +28,13 @@ header nav li {
     display: inline;
     margin-left: 16px;
     font-size: 18px;
+    margin-left: 70px;
 }
 
 header nav li a{
     color: #ecf0f1;
     text-decoration: none;
+    margin-left: 30px;
 }
 
 .container {
@@ -45,15 +48,16 @@ section .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border: ;
 }
 
 .brands-list img {
-    height: 24px;
+    height: 200px;
     margin-right: 8px;
 }
 
 .brands-list li {
-    display: inline;
+    display: inline;;
 }
 
 section .container {
@@ -76,18 +80,22 @@ section p {
     margin-bottom: 8px;
 }
 
+section about {
+    justify-content: none;
+}
+
 .store-front {
     margin-right: 32px;
 }
 
 .social-links img {
-    height: 24px;
+    height: 50px;
+    margin-top: 70px;
 }
 
 .social-links li {
-    display: inline;
-    margin-right: 8px;
-}
+    display: flow-root
+ }
 
 .social-links li a {
     text-decoration: none;
@@ -98,7 +106,7 @@ section p {
 }
 
 .contact-methods {
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
 }
 
@@ -140,3 +148,4 @@ footer {
     color: #ecf0f1;
     padding: 16px 0;
 }
+
