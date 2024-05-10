@@ -1,0 +1,81 @@
+/* Reset de Estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: rgb(250, 208, 169); /* Cor de fundo do corpo da página */
+    color: #000; /* Cor do texto do corpo da página */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header, footer {
+    background-color: #182c61; /* Cor de fundo do cabeçalho e rodapé */
+    color: #ecf0f1; /* Cor do texto do cabeçalho e rodapé */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+h1, {
+    margin-bottom: 20px;
+    color: #fff; /* Cor do texto dos títulos */
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #000; /* Cor do texto dos títulos */
+}
+
+p {
+    margin-bottom: 20px;
+    color: #000; /* Cor do texto dos parágrafos */
+}
+
+/* Estilos específicos para o formulário */
+form label {
+    display: block;
+    margin-bottom: 5px;
+    color: #000; /* Cor do texto dos labels */
+}
+
+form input, form select {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100%;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #182c61; /* Cor de fundo do botão */
+    color: #ecf0f1; /* Cor do texto do botão */
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #35509c; /* Cor de fundo do botão ao passar o mouse */
+}

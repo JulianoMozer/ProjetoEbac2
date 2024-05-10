@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletivas de Atletas - Parma São José Futebol Clube</title>
+    <link rel="stylesheet" href="./avaliaçoes.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Seletivas de Atletas de Futebol de Campo (Maio/2024)</h1>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="./index.html">Início</a>
+                    </li>
+                    <li>
+                        <a href="./sobre.html">Sobre Nós</a>
+                    </li>
+                    <!-- Adicione links para outras páginas, se necessário -->
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <section id="seletivas">
+        <div class="container">
+            <h2>Informações sobre as Seletivas</h2>
+            <p>
+                Para confirmar a participação, envie os seguintes dados:<br>
+                Nome completo do atleta, RG, Data de nascimento, Posição<br><br>
+
+                Datas das Seletivas (comparecer com chuteira SEM travas, calção, meião, camisa preta):<br>
+                Sub-14 e Sub-16: 14/05/2024 e 16/05/2024 (horário às 15h)<br><br>
+
+                Formas de Pagamento:<br>
+                Valor da Avaliação: R$ 50,00<br>
+                Opções de Pagamento: PIX antecipado ou pagamento em mãos no dia da seletiva;<br>
+                Isenção de Taxa: Atletas que apresentarem uma declaração de matrícula de colégios isentos serão dispensados da taxa de avaliação.<br><br>
+
+                Contribuição Mensal (Para Atletas Aprovados):<br>
+                Valor: R$ 140,00<br>
+                Destinação: Contribuição para as despesas do Parma São José Futebol Clube<br><br>
+
+                Participação em Campeonatos:<br>
+                Adulto: Liga de São José<br>
+                Sub-17: Liga de São José<br>
+                Sub-16 e Sub-14: Campeonato Paranaense 2024<br>
+                Outros campeonatos, jogos avaliativos contra equipes profissionais, treino avaliativo com “olheiros”, etc.<br><br>
+
+                Benefícios para Atletas Aprovados: Os atletas aprovados que se inscreverem para os campeonatos terão direito à carteirinha da Federação Paranaense de Futebol e inscrição no BID.<br><br>
+
+                Estrutura do Clube:<br>
+                Vestiários: 2<br>
+                Campos de Futebol Suíço: 7<br>
+                Campo de Futebol de Areia: 1<br>
+                Campo de Futebol de Sintético: 1<br>
+                Campo de Futebol Oficial: 1<br><br>
+
+                Local da Avaliação: Bar do Elcio do Bolinho LTDA (CT PARMA SJ F.C.)<br>
+                R. José Francisco Negoseki, 1025 - Zacarias, São José dos Pinhais - PR, 83020-838<br>
+                <a href="https://maps.app.goo.gl/WuppZKEniWgievSo9">Ver no Google Maps</a>
+            </p>
+
+            <h2>Formulário de Inscrição</h2>
+            <form action="processar_inscricao.php" method="post">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" required><br>
+
+                <label for="rg">RG:</label>
+                <input type="text" id="rg" name="rg" required><br>
+
+                <label for="data_nascimento">Data de Nascimento:</label>
+                <input type="date" id="data_nascimento" name="data_nascimento" required><br>
+
+                <label for="posicao">Posição:</label>
+                <input type="text" id="posicao" name="posicao" required><br>
+
+                <label for="pagamento">Forma de Pagamento:</label>
+                <select id="pagamento" name="pagamento" required>
+                    <option value="PIX">PIX antecipado</option>
+                    <option value="pagamento_maos">Pagamento em mãos no dia da seletiva</option>
+                </select><br>
+
+                <label for="declaracao">Comprovante de Pagamento:</label>
+                <input type="file" id="declaracao" name="declaracao"><br>
+
+                <button type="submit">Enviar Inscrição</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <p>&copy; Parma São José Futebol Clube - Todos os direitos reservados - 2024</p>
+        </div>
+    </footer>
+</body>
+</html>
