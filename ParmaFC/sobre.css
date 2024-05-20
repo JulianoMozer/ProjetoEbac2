@@ -1,8 +1,11 @@
 /* Estilos para a página "Sobre Nós" */
+
+/* Estilos Gerais */
 body {
-    font-family: 'Roboto Condensed', sans-serif;
-    margin: 0;
-    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: rgb(250, 208, 169); /* Cor de fundo do corpo da página */
+    color: #000; /* Cor do texto do corpo da página */
 }
 
 .container {
@@ -11,10 +14,9 @@ body {
     padding: 20px;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
-    padding: 20px 0;
+p {
+    max-width: 700px; /* Defina a largura máxima desejada */
+    margin: auto;
 }
 
 header h1 {
@@ -51,9 +53,9 @@ section {
     line-height: 1.6;
 }
 
-footer {
-    background-color: #333;
-    color: #fff;
+header, footer {
+    background-color: #182c61; /* Cor de fundo do cabeçalho e rodapé */
+    color: #ecf0f1; /* Cor do texto do cabeçalho e rodapé */
+    padding: 10px 0;
     text-align: center;
-    padding: 20px 0;
 }

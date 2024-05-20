@@ -18,10 +18,11 @@ body, input, textarea {
     background-color: rgb(250, 208, 169);
 }
 
-header {
-    padding: 16px 0;
-    background-color: #182c61;
-    color: #ecf0f1;
+header, footer {
+    background-color: #182c61; /* Cor de fundo do cabeçalho e rodapé */
+    color: #ecf0f1; /* Cor do texto do cabeçalho e rodapé */
+    padding: 10px 0;
+    text-align: center;
 }
 
 header nav li {
@@ -141,11 +142,5 @@ form button:hover {
 
 input:focus, textarea {
     outline-color: #35509c;
-}
-
-footer {
-    background-color: #182c61;
-    color: #ecf0f1;
-    padding: 16px 0;
 }
 

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Validação</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input[type="number"], .aviso {
+            width: calc(100% - 20px);
+            padding: 8px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            text-align: center;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #mensagem {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+
+        #mensagem.valido {
+            color: green;
+        }
+
+        #mensagem.invalido {
+            color: red;
+        }
+
+        .aviso {
+            color: #f00;
+            font-size: 12px;
+            display: block;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form id="meuFormulario">
+        <label for="campoA">Campo A:</label>
+        <input type="number" id="campoA" name="campoA" required>
+        <br>
+        <label for="campoB">Campo B:</label>
+        <input type="number" id="campoB" name="campoB" required>
+        <span class="aviso">* Campo B deve ser maior que o Campo A</span>
+        <br>
+        <button type="submit">Submeter</button>
+    </form>
+    <p id="mensagem"></p>
+
+    <script>
+        // Função de validação do formulário
+        document.getElementById('meuFormulario').addEventListener('submit', function(event) {
+            event.preventDefault(); // Evita o envio do formulário
+            
+            var campoA = parseFloat(document.getElementById('campoA').value);
+            var campoB = parseFloat(document.getElementById('campoB').value);
+            var mensagem = document.getElementById('mensagem');
+
+            if (campoB > campoA) {
+                mensagem.textContent = "Formulário válido! O número B é maior que o número A.";
+                mensagem.className = "valido";
+            } else {
+                mensagem.textContent = "Formulário inválido! O número B deve ser maior que o número A.";
+                mensagem.className = "invalido";
+            }
+        });
+    </script>
+</body>
+</html>
